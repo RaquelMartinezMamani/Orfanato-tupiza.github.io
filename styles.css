@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('fondo1.avif'); 
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 20px; 
+}
+
+h1 {
+    font-size: 50px; /
+}
+
+h2 {
+    font-size: 40px; 
+}
+
+p {
+    font-size: 20px;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+section {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.welcome-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.welcome-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.welcome-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.welcome-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+/* Sección de texto */
+.intro, .adoption-process, .testimonials, .contact {
+    text-align: left;
+}
+
+.intro h2, .adoption-process h2, .testimonials h2, .contact h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.intro p, .adoption-process p, .testimonials p, .contact p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.orphanage-profile {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.orphanage-profile img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.orphanage-profile h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+
+form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+
+form button {
+    padding: 12px 20px;
+    background: #18bc9c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #1abc9c;
+}
+
+.btn-social {
+    background-color: #3498db; 
+    color: white;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+.btn-social:hover {
+    background-color: #2980b9;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-social.facebook {
+    background-color: #3b5998; 
+}
+
+.btn-social.facebook:hover {
+    background-color: #344e86;
+}
+
+.btn-social.email {
+    background-color: #e74c3c; 
+}
+
+.btn-social.email:hover {
+    background-color: #c0392b;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+
+.btn-social i {
+    font-size: 1.5rem;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+
+.videos-container {
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.videos-container video {
+    display: block; 
+    margin: 20px auto; 
+}
+
+
+.img-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-info img {
+    display: block;
+    margin: 0 auto; 
+    max-width: 100%; 
+}
+
